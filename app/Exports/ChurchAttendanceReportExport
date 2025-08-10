@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Exports;
+
+use App\Models\ChurchAttendanceReport;
+use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+
+class ChurchAttendanceReportExport implements FromCollection, WithHeadings
+{
+    public function collection()
+    {
+        return ChurchAttendanceReport::select(
+            'church',
+            'membership_strength',
+            'confirmed_today',
+            'yet_to_confirm',
+            'coming_with_own_cars',
+            'coming_with_bus',
+            'expecting_healing'
+        )->get();
+    }
+
+    public function headings(): array
+    {
+        return [
+            'Church',
+            'Membership Strength',
+            'Number Confirmed Today',
+            'Number Yet To Confirm',
+            'Number Coming With Own Cars',
+            'Number Coming With Bus',
+            'Number Expecting Healing',
+        ];
+    }
+}
