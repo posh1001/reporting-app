@@ -70,6 +70,7 @@
                 <x-forms.social-media-form />
                 <x-forms.tv-form />
                 <x-forms.evangelism-squad />
+                <x-forms.dignitaries />
                 <x-forms.outdoor-publicity-form />
             </div>
         </main>
