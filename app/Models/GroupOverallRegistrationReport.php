@@ -10,7 +10,7 @@ class GroupOverallRegistrationReport extends Model
     use HasFactory;
 
     protected $fillable = [
-        'group',
+        'church_group',
         'attendance_target',
         'confirmed_via_link',
         'yet_to_confirm',

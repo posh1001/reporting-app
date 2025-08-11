@@ -12,7 +12,7 @@ class OutdoorPublicityReport extends Model
     use HasFactory;
 
     protected $fillable = [
-        'group',
+        'church_group',
         'church',
         'lga',
         'number_of_ward',

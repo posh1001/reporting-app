@@ -22,6 +22,6 @@ class GroupOverallRegistrationReportController extends Controller
 
         GroupOverallRegistrationReport::create($validated);
 
-        return redirect()->back()->with('success', 'Group overall attendance submitted successfully Report submitted successfully!');
+        return redirect()->back()->with('success', 'Group overall attendance Report submitted successfully!');
     }
 }

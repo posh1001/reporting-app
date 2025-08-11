@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ChurchRegistrationReport extends Model
 {
     protected $fillable = [
-        'church',
+        'church_group',
         'attendance_target',
         'confirmed_via_link',
         'yet_to_confirm',

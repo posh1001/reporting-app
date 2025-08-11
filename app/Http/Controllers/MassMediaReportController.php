@@ -21,6 +21,6 @@ class MassMediaReportController extends Controller
 
         MassMediaReport::create($validated);
 
-        return redirect()->back()->with('success', 'Report submitted successfully.');
+        return redirect()->back()->with('success', 'Mass Media Report submitted successfully.');
     }
 }

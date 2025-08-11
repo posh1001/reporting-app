@@ -57,7 +57,7 @@
             </div>
 
             <!-- Form Body -->
-            <form action="/tv" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form action="/tv" method="POST" class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 @csrf
 
                 <!-- Church -->
@@ -101,7 +101,7 @@
 
                 <!-- Number coming with own cars -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Total slot yet to be commissioned</label>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Total slot yet to be commissioned</label>
                     <input type="number" name="total_slots_yet_to_be_commissioned" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
@@ -113,7 +113,7 @@
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Number of contact that have come to church</label>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contact that have come to church</label>
                     <input type="number" name="number_of_contact_that_have_come_to_church" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>

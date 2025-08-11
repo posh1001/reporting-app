@@ -21,6 +21,6 @@ class TransitMediaReportController extends Controller
 
         TransitMediaReport::create($validated);
 
-        return redirect()->back()->with('success', 'Report submitted successfully!');
+        return redirect()->back()->with('success', 'Transit Media Report submitted successfully!');
     }
 }
