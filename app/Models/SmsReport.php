@@ -11,7 +11,7 @@ class SmsReport extends Model
     use HasFactory;
 
     protected $fillable = [
-        'group',
+        'church_group',
         'church',
         'Type_of_Sms',
         'Number_As_At_Today',

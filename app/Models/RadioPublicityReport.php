@@ -5,17 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TelevisionReport extends Model
+class RadioPublicityReport extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'tv_station',
+        'stations',
         'total_slot_required',
-        'total_podcast_required',
-        'total_slots_done',
-        'total_slots_yet_to_be_commissioned',
-        'resources_required',
+        'total_completed',
+        'total_calls_received',
+        'seats_reserved',
+        'number_registered',
+        'slots_yet_to_be_commissioned',
         'number_of_contact_that_have_come_to_church',
     ];
 }

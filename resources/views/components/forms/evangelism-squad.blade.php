@@ -1,5 +1,4 @@
 
-
 <!-- Alpine State Wrapper -->
 <div x-data="{ showModal: false }">
 
@@ -23,7 +22,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-white">Radio Publicity <br>Report</h2>
+                    <h2 class="text-lg font-semibold text-white">Evangelism Squad <br> Report</h2>
                     <p class="text-sm text-gray-400">Click to open and submit your report</p>
                 </div>
             </div>
@@ -52,72 +51,53 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-white">Radio Publicity<br> Report</h2>
+                    <h2 class="text-xl font-semibold text-white">Evangelism Squad<br> Report</h2>
                     <p class="text-sm text-gray-400">Please complete the form below to submit your report.</p>
                 </div>
             </div>
 
             <!-- Form Body -->
-            <form action="/radio" method="POST" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <form action="{{ route('evangelism-squad.store') }}" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 @csrf
 
+                <!-- Church -->
                 <div>
-                    <label class="block text-sm text-gray-500 mb-1">Radio Stations</label>
-                    <select name="stations"
-                        class="w-full bg-gray-900 hover-white text-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        required>
-                        <option value="" disabled selected>Select Radio Stations</option>
-                        <option value="super_fm_92.7">Super FM 92.7</option>
-                        <option value="inspiration_fm">Inspiration FM</option>
-                        <option value="ray_power">Ray Power</option>
-                        <option value="city_fm">City FM</option>
-                    </select>
-                </div>
-
-                <!-- Number Yet To Confirm -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Total Slots Required</label>
-                    <input type="number" name="total_slot_required" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Location</label>
+                    <input type="text" name="location" placeholder="Location"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
+                <!-- Attendance Target -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Total Completed</label>
-                    <input type="number" name="total_completed" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Number Led To Christ</label>
+                    <input type="number" name="number_led_to_christ" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
-                <!-- Yet to be Invited -->
+                <!-- Confirmed Via Link -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Calls Received</label>
-                    <input type="number" name="total_calls_received" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Number Confirmed For Attendance
+                        Link</label>
+                    <input type="number" name="number_confirmed_for_attendance" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
-                <!-- Number coming with own cars -->
+                <!-- Yet to Confirm -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">SMS</label>
-                    <input type="number" name="seats_reserved" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-                  <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Number Registered</label>
-                    <input type="number" name="number_registered" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Slots yet to be commissioned</label>
-                    <input type="number" name="slots_yet_to_be_commissioned" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-                  <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contact that have come to church</label>
-                    <input type="number" name="number_of_contact_that_have_come_to_church" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Data Collated</label>
+                    <input type="number" name="data_collated" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
-                <!-- Submit Button (span all 3 columns on md+) -->
-                <div class="md:col-span-3 flex justify-end pt-4">
+                <!-- Confirmed Via Call Center -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Testimonies</label>
+                    <input type="number" name="testimonies" placeholder="0"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="md:col-span-2 flex justify-end pt-4">
                     <button type="submit"
                         class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
@@ -127,7 +107,6 @@
 
         </div>
     </div>
-
 </div>
 
 <!-- Optional Fade Animation -->

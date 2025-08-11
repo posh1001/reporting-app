@@ -11,15 +11,12 @@ class TransitMediaReport extends Model
     use HasFactory;
 
     protected $fillable = [
-        'group',
+        'group_church',
+        'group_transit',
         'church',
-        'total_number_in_lagos_island',
         'location',
-        'total_number_in_eti_osa',
         'number_conmissioned_in_eti_osa',
-        'total_number_in_ibeju_lekki',
         'total_number_commissioned_in_ibeju_lekki',
-        'total_number_in_epe',
         'total_number_commissioned_in_epe',
     ];
 }

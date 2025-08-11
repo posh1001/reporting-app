@@ -103,14 +103,6 @@
                                placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
-                <!-- Expecting Healing -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Expecting Healing</label>
-                    <input type="number" name="expecting_healing" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
                 <!-- Submit Button -->
                 <div class="md:col-span-2 flex justify-end pt-4">
                     <button type="submit"

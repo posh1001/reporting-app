@@ -12,8 +12,7 @@ class CreateOutdoorPublicityReportsTable extends Migration
     {
         Schema::create('outdoor_publicity_reports', function (Blueprint $table) {
             $table->id();
-
-            $table->string('group');
+            $table->string('church_group');
             $table->string('church');
             $table->string('lga');
             $table->integer('number_of_ward')->nullable();

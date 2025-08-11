@@ -1,10 +1,10 @@
  <div>
      <label class="block text-sm text-gray-500 mb-1">Group</label>
-     <select name="group"
+     <select name="church_group"
          class="w-full bg-gray-900 hover-white px-4 py-2 text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
          required>
          <option value="" disabled selected>Select your group</option>
-         <option value="CELZ5">CELZ5</option>
+         <option value="CELZ5">Zonal Office</option>
          <option value="Lekki Group">Lekki Group</option>
          <option value="Lekki Phase 1">Lekki Phase 1</option>
          <option value="Chevron Group">Chevron Group</option>

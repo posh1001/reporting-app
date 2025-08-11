@@ -24,7 +24,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-white">Outdoor Publicity <br>Report</h2>
+                    <h2 class="text-lg font-semibold text-white">Outdoor Publicity Report <span class="text-sm font-sm text-gray-300">(Neighbourhood banners and A3 stickers)</h2>
                     <p class="text-sm text-gray-400">Click to open and submit your report</p>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-white">Outdoor Publicity<br> Report</h2>
+                    <h2 class="text-xl font-semibold text-white">Outdoor Publicity Report <br> <span class="text-sm">(Neighbourhood banners and A3 stickers)</span></h2>
                     <p class="text-sm text-gray-400">Please complete the form below to submit your report.</p>
                 </div>
             </div>

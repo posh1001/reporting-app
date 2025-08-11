@@ -112,6 +112,11 @@
                     <input type="number" name="resources_required" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Number of contact that have come to church</label>
+                    <input type="number" name="number_of_contact_that_have_come_to_church" placeholder="0"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
                 <!-- Submit Button (span all 3 columns on md+) -->
                 <div class="md:col-span-3 flex justify-end pt-4">
                     <button type="submit"

@@ -92,13 +92,13 @@
                 <!-- Number Yet To Confirm -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Engagement</label>
-                    <input type="number" name="engagement" placeholder="eg. views, likes, clicks "
+                    <input type="text" name="engagement" placeholder="eg. views, likes, clicks "
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Conversion</label>
-                    <input type="number" name="conversion" placeholder="eg. enquires, attendees, received calls"
+                    <input type="text" name="conversion" placeholder="eg. enquires, attendees, received calls"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 

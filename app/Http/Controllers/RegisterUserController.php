@@ -23,7 +23,7 @@ class RegisterUserController extends Controller
 
         $validated = $request->validate([
             'email' => ['required', 'email', 'max:254', 'unique:users,email'],
-            'group' => 'required|string|max:255',
+             'church_group' => 'required|string|in:Lagos Island,Eti-Osa,Epe,Ibeju Lekki,VI Group,Ikoyi 1 Subgroup,Ikoyi 2 Subgroup,Lagos Island Group,Mobile Road Group,Ajiwe Group,Ajah Group,Tedo Group,Abijo Group,Kajola Group,Lekki Free Trade Zone Group,Epe Group,Teens Group,Youth Group,Owode/Badore Group,Alasia Group,Onishon Group,Eputu Group,Obalende Group,Ogombo Group',
             'church' => 'required|string|max:255',
              'password' => ['required', Password::min(6)],
             // Add other validation rules based on x-home-form fields

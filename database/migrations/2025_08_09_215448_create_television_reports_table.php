@@ -10,14 +10,13 @@ class CreateTelevisionReportsTable extends Migration
     {
         Schema::create('television_reports', function (Blueprint $table) {
             $table->id();
-
-            $table->string('group');
             $table->string('tv_station');
             $table->integer('total_slot_required')->default(0);
             $table->integer('total_podcast_required')->default(0);
             $table->integer('total_slots_done')->default(0);
             $table->integer('total_slots_yet_to_be_commissioned')->default(0);
             $table->integer('resources_required')->default(0);
+            $table->integer('number_of_contact_that_have_come_to_church')->default(0);
 
             $table->timestamps();
         });

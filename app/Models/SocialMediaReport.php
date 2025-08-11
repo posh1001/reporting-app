@@ -12,7 +12,6 @@ class SocialMediaReport extends Model
     use HasFactory;
 
     protected $fillable = [
-        'group',
         'social_media',
         'total_estimated_reach',
         'engagement',

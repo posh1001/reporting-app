@@ -59,7 +59,7 @@
             </div>
 
             <!-- Form -->
-            <form action="/sms-report" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form action="/sms-report" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 @csrf
                 <x-home-form />
 
@@ -76,7 +76,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Type of SMS</label>
                     <select name="Type_of_Sms"
                         class="w-full px-4 py-2 border border-gray-700 bg-gray-800 text-white rounded-lg
-               focus:outline-none focus:ring-2 focus:ring-green-500"
+                         focus:outline-none focus:ring-2 focus:ring-green-500"
                         required>
                         <option value="" disabled selected>Select SMS Type</option>
                         <option value="Registration">Registration</option>

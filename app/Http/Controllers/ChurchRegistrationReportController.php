@@ -24,6 +24,6 @@ class ChurchRegistrationReportController extends Controller
 
         ChurchRegistrationReport::create($validated);
 
-        return redirect()->back()->with('success', 'Report submitted successfully.');
+        return redirect()->back()->with('success', 'Cell Ministry Invitee Report submitted successfully.');
     }
 }

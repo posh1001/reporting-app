@@ -38,12 +38,13 @@
                 </form>
             </div>
         </header>
-          <hr class="h-1/2 my-6 bg-gray-200 border-gray-700 dark:bg-white-800">
+        <hr class="h-1/2 my-6 bg-gray-200 border-gray-700 dark:bg-white-800">
         <!-- Page Content -->
         <main class="flex-grow container mx-auto px-4 py-10" x-data="{ activeModal: null }">
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <h2 class="text-3xl font-bold text-blue-600">Submit Your Reports</h2>
-                <p class="text-gray-500 mt-2">Choose the report type below and fill out the required details quickly and easily.</p>
+                <p class="text-gray-500 mt-2">Choose the report type below and fill out the required details quickly and
+                    easily.</p>
             </div>
 
             @if (session('success'))
@@ -55,26 +56,28 @@
             <!-- Reports Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Add more forms/components here -->
-                 <x-forms.church-service-form />
-                 <x-forms.bus-services-form />
-                 <x-forms.call-center-form />
-                 <x-forms.sms-report/>
-                 <x-forms.church-overall-reg />
-                 <x-forms.church-summary-attendance-form />
-                 <x-forms.group-overall-reg-form />
-                 <x-forms.group-summary-attendance-form />
-                 <x-forms.mass-media-form />
-                 <x-forms.transit-media-form />
-                 <x-forms.outdoor-publicity-form />
-                 <x-forms.radio-form />
-                 <x-forms.social-media-form />
-                 <x-forms.tv-form />
+                {{-- <x-forms.church-service-form /> --}}
+                <x-forms.bus-services-form />
+                <x-forms.call-center-form />
+                <x-forms.sms-report />
+                <x-forms.cell-ministry-invitee-registration />
+                <x-forms.church-summary-attendance-form />
+                <x-forms.group-overall-reg-form />
+                <x-forms.group-summary-attendance-form />
+                <x-forms.mass-media-form />
+                <x-forms.transit-media-form />
+                <x-forms.radio-form />
+                <x-forms.social-media-form />
+                <x-forms.tv-form />
+                <x-forms.evangelism-squad />
+                <x-forms.outdoor-publicity-form />
             </div>
         </main>
 
         <!-- Footer -->
         <footer class="bg-gray-900 text-white border-t mt-10 border-gray-700">
-            <div class="container mx-auto py-6 px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div
+                class="container mx-auto py-6 px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                 <div class="flex items-center space-x-2 mb-4 md:mb-0">
                     <img src="/images/logo.png" class="h-8" alt="Logo">
                     <span class="text-lg font-semibold text-gray-700">CELZ5</span>

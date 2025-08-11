@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('group_overall_registration_reports', function (Blueprint $table) {
             $table->id();
-            $table->string('group');
+            $table->string('church_group');
             $table->integer('attendance_target')->default(0);
             $table->integer('confirmed_via_link')->default(0);
             $table->integer('yet_to_confirm')->default(0);

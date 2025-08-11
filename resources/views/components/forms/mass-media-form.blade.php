@@ -57,7 +57,7 @@
             </div>
 
             <!-- Form Body -->
-            <form action="/mass-media" method="POST" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <form action="/mass-media" method="POST" class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 @csrf
 
                 <!-- Church -->
@@ -74,50 +74,33 @@
 
                 <div>
                     <label class="block text-sm text-gray-500 mb-1">Platform</label>
-                    <select name="platform text-white-400"
+                    <select name="platform"
                         class="w-full bg-gray-900 text-white hover-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         required>
                         <option value="" disabled selected>Select Platform</option>
-                        <option value="bill_board">Bill Boards</option>
-                        <option value="flag_post">Flag Posts</option>
-                        <option value="news_paper_advert">News Paper advert</option>
-                        <option value="magazines">Magazines</option>
+                        <option value="led_screen">LED Screens</option>
+                        <option value="static_boards">Static Boards</option>
+                        <option value="lamp_post">Lamp Posts</option>
                     </select>
                 </div>
-
-                <!-- Numbers Confirmed Today -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Total Number In Lagos Island</label>
-                    <input type="number" name="total_number_in_lagos_island" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
-                <!-- Number Yet To Confirm -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Location</label>
-                    <input type="number" name="location" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
-                <!-- Yet to be Invited -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total number in eti-osa</label>
-                    <input type="number" name="total_number_in_eti-osa" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                  <div>
+                    <label class="block text-sm text-gray-500 mb-1">Location</label>
+                    <select name="location"
+                        class="w-full bg-gray-900 text-white hover-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        required>
+                        <option value="" disabled selected>Select Location</option>
+                        <option value="lagos_island">Lagos Island</option>
+                        <option value="eti-osa">Eti-Osa</option>
+                        <option value="epe">Epe</option>
+                        <option value="ibeju_lekki">Ibeju-Lekki</option>
+                    </select>
                 </div>
 
                 <!-- Number coming with own cars -->
                 <div>
                     <label class="block text-xs font-medium text-gray-500 mb-1">Total conmissioned number in
                         eti-osa</label>
-                    <input type="number" name="number_conmissioned_in_eti_osa" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
-                <!-- Number coming with bus -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total number in Ibeju Lekki</label>
-                    <input type="number" name="total_number_in_ibeju_lekki" placeholder="0"
+                    <input type="number" name="number_commissioned_in_eti_osa" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
@@ -128,17 +111,14 @@
                     <input type="number" name="total_number_commissioned_in_ibeju_lekki" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
-
-                <!-- Total expected attendance -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total number in Epe</label>
-                    <input type="number" name="total_number_in_epe" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
                 <div>
                     <label class="block text-xs font-medium text-gray-500 mb-1">Total commissioned in Epe</label>
                     <input type="number" name="total_number_commissioned_in_epe" placeholder="0"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                 <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contect that have come to church</label>
+                    <input type="number" name="number_of_contact_that_have_come_to_church" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
@@ -150,7 +130,6 @@
                     </button>
                 </div>
             </form>
-
         </div>
     </div>
 

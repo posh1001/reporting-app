@@ -11,15 +11,12 @@ class CreateTransitMediaReportsTable extends Migration
     {
         Schema::create('transit_media_reports', function (Blueprint $table) {
             $table->id();
-            $table->string('group')->nullable();
+            $table->string('group_church')->nullable();
+            $table->string('group_transit')->nullable();
             $table->string('church')->nullable();
-            $table->integer('total_number_in_lagos_island')->nullable();
-            $table->integer('location')->nullable();
-            $table->integer('total_number_in_eti_osa')->nullable();
+            $table->string('location')->nullable();
             $table->integer('number_conmissioned_in_eti_osa')->nullable();
-            $table->integer('total_number_in_ibeju_lekki')->nullable();
             $table->integer('total_number_commissioned_in_ibeju_lekki')->nullable();
-            $table->integer('total_number_in_epe')->nullable();
             $table->integer('total_number_commissioned_in_epe')->nullable();
             $table->timestamps();
         });

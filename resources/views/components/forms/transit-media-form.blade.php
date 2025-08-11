@@ -1,6 +1,3 @@
-
-
-
 <!-- Alpine State Wrapper -->
 <div x-data="{ showModal: false }">
 
@@ -76,51 +73,35 @@
 
                 <div>
                     <label class="block text-sm text-gray-500 mb-1">Transit Mode</label>
-                    <select name="group"
+                    <select name="group_transit"
                         class="w-full text-white bg-gray-900 text-white hover-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         required>
                         <option value="" disabled selected>Select Mode</option>
-                        <option value="Group 1">BRT Buses Stickers</option>
-                        <option value="Group 2">BRT Buses In Drive Radio</option>
-                        <option value="Group 3">Regular Buses</option>
-                        <option value="Group 3">7-Seater Buses</option>
-                        <option value="Group 3">Tricycles</option>
+                        <option value="brt_buses_stickers">BRT Buses Stickers</option>
+                        <option value="brt_buses_in_drive_radio">BRT Buses In Drive Radio</option>
+                        <option value="regular_buses">Regular Buses</option>
+                        <option value="7_seater_buses">7-Seater Buses</option>
+                        <option value="tricycles">Tricycles</option>
                     </select>
                 </div>
-
-                <!-- Numbers Confirmed Today -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Total Number In Lagos Island</label>
-                    <input type="number" name="total_number_in_lagos_island" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
-                <!-- Number Yet To Confirm -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Location</label>
-                    <input type="text" name="location" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
-                <!-- Yet to be Invited -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total number in eti-osa</label>
-                    <input type="number" name="total_number_in_eti-osa" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <label class="block text-sm text-gray-500 mb-1">Location</label>
+                    <select name="location"
+                        class="w-full bg-gray-900 text-white hover-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        required>
+                        <option value="" disabled selected>Select Location</option>
+                        <option value="lagos_island">Lagos Island</option>
+                        <option value="eti-osa">Eti-Osa</option>
+                        <option value="epe">Epe</option>
+                        <option value="ibeju_lekki">Ibeju-Lekki</option>
+                    </select>
                 </div>
 
                 <!-- Number coming with own cars -->
                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total conmissioned number in
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Total commissioned number in
                         eti-osa</label>
                     <input type="number" name="number_conmissioned_in_eti_osa" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
-                <!-- Number coming with bus -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total number in Ibeju Lekki</label>
-                    <input type="number" name="total_number_in_ibeju_lekki" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
@@ -131,14 +112,6 @@
                     <input type="number" name="total_number_commissioned_in_ibeju_lekki" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
-
-                <!-- Total expected attendance -->
-                <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total number in Epe</label>
-                    <input type="number" name="total_number_in_epe" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-
                 <div>
                     <label class="block text-xs font-medium text-gray-500 mb-1">Total number commissioned in Epe</label>
                     <input type="number" name="total_number_commissioned_in_epe" placeholder="0"

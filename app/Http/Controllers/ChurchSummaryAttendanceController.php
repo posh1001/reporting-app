@@ -22,6 +22,6 @@ class ChurchSummaryAttendanceController extends Controller
 
         ChurchSummaryAttendance::create($validated);
 
-        return redirect()->back()->with('success', 'Report submitted successfully!');
+        return redirect()->back()->with('success', 'Church summary attendance Report submitted successfully!');
     }
 }

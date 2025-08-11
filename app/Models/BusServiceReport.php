@@ -15,6 +15,5 @@ class BusServiceReport extends Model
         'leader_responsible',
         'number_to_deliver',
         'catchment_name',
-        'expecting_healing',
     ];
 }

@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         Schema::create('sms_reports', function (Blueprint $table) {
             $table->id();
-            $table->string('group');
+            $table->string('church_group');
             $table->string('church');
             $table->enum('Type_of_Sms', ['Registration', 'Prayer Request', 'Unspecified']);
             $table->unsignedInteger('Number_As_At_Today')->default(0);

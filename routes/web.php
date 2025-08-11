@@ -17,6 +17,10 @@ use App\Http\Controllers\TransitMediaReportController;
 use App\Http\Controllers\OutdoorPublicityReportController;
 use App\Http\Controllers\SocialMediaReportController;
 use App\Http\Controllers\TelevisionReportController;
+use App\Http\Controllers\EvangelismSquadReportController;
+use App\Http\Controllers\RadioPublicityReportController;
+
+
 
 
 
@@ -35,6 +39,10 @@ Route::get('/dashboard', function () {
 
 
 // Reporting Portal Modal Form Route
+Route::post('/radio', [RadioPublicityReportController::class, 'store']);
+
+Route::post('/evangelism-squad', [EvangelismSquadReportController::class, 'store'])->name('evangelism-squad.store');
+
 Route::post('/tv', [TelevisionReportController::class, 'store'])->name('tv.store');
 
 Route::post('/social-media', [SocialMediaReportController::class, 'store'])->name('social-media.store');
@@ -69,11 +77,6 @@ Route::post('/church-registration-reports', [ChurchRegistrationReportController:
 
 Route::post('/report', [ReportController::class, 'submit'])->name('report.submit');
 
-/*
-|--------------------------------------------------------------------------
-| User Auth
-|--------------------------------------------------------------------------
-*/
 Route::get('/register', [RegisterUserController::class, 'create'])->name('register.create');
 Route::post('/register', [RegisterUserController::class, 'store'])->name('register.store');
 

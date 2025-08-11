@@ -15,7 +15,6 @@ return new class extends Migration
             $table->string('leader_responsible')->nullable();
             $table->integer('number_to_deliver')->default(0);
             $table->string('catchment_name')->nullable();
-            $table->integer('expecting_healing')->default(0);
             $table->timestamps();
         });
     }

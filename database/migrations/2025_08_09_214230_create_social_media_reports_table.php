@@ -12,11 +12,10 @@ class CreateSocialMediaReportsTable extends Migration
     {
         Schema::create('social_media_reports', function (Blueprint $table) {
             $table->id();
-            $table->string('group');
             $table->string('social_media');
             $table->integer('total_estimated_reach')->nullable();
-            $table->integer('engagement')->nullable();
-            $table->integer('conversion')->nullable();
+            $table->string('engagement')->nullable();
+            $table->string('conversion')->nullable();
 
             $table->timestamps();
         });

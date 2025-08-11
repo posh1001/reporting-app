@@ -160,7 +160,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-white">Church Overall <br>Registration Report</h2>
+                    <h2 class="text-lg font-semibold text-white">Cell Ministry Invitee <br>Registration Report</h2>
                     <p class="text-sm text-gray-400">Click to open and submit your report</p>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-white">Church Overall <br> Registration Report</h2>
+                    <h2 class="text-xl font-semibold text-white">Cell Ministry Invitee <br>Registration Report</h2>
                     <p class="text-sm text-gray-400">Please complete the form below to submit your report.</p>
                 </div>
             </div>

@@ -15,7 +15,6 @@ class BusServiceReportController extends Controller
             'leader_responsible' => 'nullable|string|max:255',
             'number_to_deliver' => 'required|integer|min:0',
             'catchment_name' => 'nullable|string|max:255',
-            'expecting_healing' => 'required|integer|min:0',
         ]);
 
         BusServiceReport::create($validated);
