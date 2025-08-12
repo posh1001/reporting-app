@@ -27,7 +27,7 @@
             <!-- Title -->
             <div class="text-center mb-6">
                 <h2 class="text-3xl font-bold text-blue-800">Create an Account</h2>
-                <p class="text-gray-400 mt-1">Join CELZ5 and start your journey with us</p>
+                <p class="text-gray-400 mt-1">A Night Of Blessings Reporting Portal</p>
             </div>
 
             <!-- Form -->
