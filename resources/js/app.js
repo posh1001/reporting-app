@@ -1,5 +1,7 @@
 import './bootstrap';
 import "../css/app.css";
+import 'livewire-turbolinks';
+
 
 // alert('Hello from Js');
 

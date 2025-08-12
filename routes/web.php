@@ -34,10 +34,10 @@ Route::get('/', function () {
     return view('report');
 })->middleware('auth');
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->name('dashboard');
+});
+
 
 
 // Reporting Portal Modal Form Route

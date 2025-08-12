@@ -1,43 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Dashboard</title>
     @vite('resources/css/app.css')
-
     @livewireStyles
-
-    <!-- Feather Icons & Alpine.js -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
+<body class="bg-gray-100 dark:bg-gray-800 min-h-screen">
 
-<body class="bg-gradient-to-br from-indigo-50 to-violet-100 text-gray-900 font-sans antialiased">
-    <div class="min-h-screen flex">
+    <header class="bg-white dark:bg-gray-900 shadow p-6">
+        <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-200">📊 Realtime Dashboard</h1>
+    </header>
 
-        <x-side-bar />
-
-        <div class="flex-1 flex flex-col">
-
-            <x-top-bar />
-
-            <main class="flex-1 p-6 space-y-8">
-
-                @livewire('dashboard-stats')
-
-                <livewire:social-media-report />
-
-            </main>
-        </div>
-    </div>
+    <main class="max-w-7xl mx-auto py-6">
+        @livewire('dashboard-stats')
+    </main>
 
     @livewireScripts
-    <!-- Feather Icons Activation -->
-    <script>
-        feather.replace()
-    </script>
 </body>
-
 </html>

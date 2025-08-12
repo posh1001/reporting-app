@@ -1,6 +1,5 @@
 <?php
 
-// app/Http/Controllers/TransitMediaReportController.php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
