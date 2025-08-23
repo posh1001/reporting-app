@@ -68,7 +68,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Church</label>
                     <input type="text" name="church" placeholder="Enter your church"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
 
@@ -76,7 +76,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number Of Dignataries Invited Today</label>
                     <input type="number" name="dignitaries_invited_today" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number Confirmed Today -->
@@ -84,7 +84,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number Confirmed To attend</label>
                     <input type="number" name="number_confirmed_to_attend" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number Yet To Confirm -->
@@ -92,13 +92,13 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Gifts Distributed Today</label>
                     <input type="text" name="gift_distributed_today" placeholder=""
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="md:col-span-2 flex justify-end pt-4">
                     <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700
+                        class="bg-blue-950 to-indigo-600 hover:from-blue-700 hover:to-indigo-700
                                text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
                     </button>

@@ -57,21 +57,22 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Add more forms/components here -->
                 {{-- <x-forms.church-service-form /> --}}
+                <x-forms.dignitaries />
                 <x-forms.bus-services-form />
                 <x-forms.call-center-form />
+                 <x-forms.program-organization />
                 <x-forms.sms-report />
+                 <x-forms.radio-form />
+                <x-forms.outdoor-publicity-form />
+                 <x-forms.tv-form />
+                <x-forms.social-media-form />
                 <x-forms.cell-ministry-invitee-registration />
+                 <x-forms.evangelism-squad />
                 <x-forms.church-summary-attendance-form />
                 <x-forms.group-overall-reg-form />
-                <x-forms.group-summary-attendance-form />
                 <x-forms.mass-media-form />
                 <x-forms.transit-media-form />
-                <x-forms.radio-form />
-                <x-forms.social-media-form />
-                <x-forms.tv-form />
-                <x-forms.evangelism-squad />
-                <x-forms.dignitaries />
-                <x-forms.outdoor-publicity-form />
+
             </div>
         </main>
 

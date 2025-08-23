@@ -20,14 +20,7 @@ use App\Http\Controllers\TelevisionReportController;
 use App\Http\Controllers\EvangelismSquadReportController;
 use App\Http\Controllers\RadioPublicityReportController;
 use App\Http\Controllers\DignitariesReportController;
-
-
-
-
-
-
-
-
+use App\Http\Controllers\ProgramOrganizationController;
 
 
 Route::get('/', function () {
@@ -43,6 +36,8 @@ Route::get('/dashboard', function () {
 // Reporting Portal Modal Form Route
 
 Route::post('/dignitaries', [DignitariesReportController::class, 'store'])->name('dignitaries.store');
+
+Route::post('/program-organization', [ProgramOrganizationController::class, 'store'])->name('program-organization.store');
 
 Route::post('/radio', [RadioPublicityReportController::class, 'store']);
 

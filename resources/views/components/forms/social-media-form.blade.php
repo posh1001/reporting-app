@@ -1,17 +1,18 @@
-
 <!-- Alpine State Wrapper -->
 <div x-data="{ showModal: false }">
 
     <!-- Report Card -->
-    <div @click="showModal = true" class="cursor-pointer relative rounded-2xl overflow-hidden max-w-md mx-auto group">
-
+    <div
+        @click="showModal = true"
+        class="cursor-pointer relative rounded-2xl overflow-hidden max-w-md mx-auto group"
+    >
         <!-- Gradient Border -->
-        <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 p-[2px]">
-        </div>
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 p-[2px]"></div>
 
-        <!-- Card Content (Dark Mode) -->
+        <!-- Card Content -->
         <div
-            class="relative bg-gray-900/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 p-6 border border-gray-700">
+            class="relative bg-gray-900/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 p-6 border border-gray-700"
+        >
             <div class="flex items-center gap-4">
                 <div class="bg-gradient-to-br from-blue-900 to-blue-800 p-3 rounded-full">
                     <!-- Icon -->
@@ -30,14 +31,20 @@
     </div>
 
     <!-- Modal -->
-    <div x-show="showModal" x-cloak
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
-        <div @click.away="showModal = false"
-            class="bg-gray-900 w-full max-w-2xl mx-auto rounded-2xl shadow-2xl p-8 space-y-8 relative animate-fadeIn border border-gray-700">
-
+    <div
+        x-show="showModal"
+        x-cloak
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+    >
+        <div
+            @click.away="showModal = false"
+            class="bg-gray-900 w-full max-w-2xl mx-auto rounded-2xl shadow-2xl p-8 space-y-8 relative animate-fadeIn border border-gray-700"
+        >
             <!-- Close Button -->
-            <button @click="showModal = false"
-                class="absolute top-4 right-4 text-gray-500 hover:text-gray-300 text-2xl leading-none">
+            <button
+                @click="showModal = false"
+                class="absolute top-4 right-4 text-gray-500 hover:text-gray-300 text-2xl leading-none"
+            >
                 &times;
             </button>
 
@@ -51,90 +58,75 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-white">Social Media<br> Report</h2>
+                    <h2 class="text-xl font-semibold text-white">Social Media Report</h2>
                     <p class="text-sm text-gray-400">Please complete the form below to submit your report.</p>
                 </div>
             </div>
 
             <!-- Form Body -->
-            <form action="/social-media" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form action="/social-media" method="POST" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 @csrf
 
                 <!-- Church -->
-                <div>
-                    <x-home-form />
-                </div>
+                <x-home-form />
 
+                <!-- Social Media Platform -->
                 <div>
                     <label class="block text-sm text-gray-500 mb-1">Select Social Media Platform</label>
                     <select name="social_media"
-                        class="w-full text-white bg-gray-900 hover-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        class="w-full text-white bg-gray-900 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         required>
                         <option value="" disabled selected>Select Social Media Platform</option>
-                        <option value="Group 1">Press Releases</option>
-                        <option value="Group 2">Facebook</option>
-                        <option value="Group 3">Twitter</option>
-                        <option value="Group 4">Instagram</option>
-                        <option value="Group 5">TikTok</option>
-                        <option value="Group 6">Youtube</option>
-                        <option value="Group 7">Pop up Ads</option>
-                        <option value="Group 8">Website</option>
+                        <option>Press Releases</option>
+                        <option>Facebook</option>
+                        <option>Twitter</option>
+                        <option>Instagram</option>
+                        <option>TikTok</option>
+                        <option>Youtube</option>
+                        <option>Pop up Ads</option>
+                        <option>Website</option>
                     </select>
                 </div>
 
-                <!-- Numbers Confirmed Today -->
+                <!-- Total Estimated Reach -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Total Estimated Reach</label>
                     <input type="number" name="total_estimated_reach" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
-                <!-- Number Yet To Confirm -->
+                <!-- Engagement -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Engagement</label>
-                    <input type="text" name="engagement" placeholder="eg. views, likes, clicks "
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <input type="text" name="engagement" placeholder="eg. views, likes, clicks"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
+                <!-- Conversion -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Conversion</label>
-                    <input type="text" name="conversion" placeholder="eg. enquires, attendees, received calls"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <input type="text" name="conversion" placeholder="eg. enquiries, attendees, received calls"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
-                <!-- Submit Button (span all 3 columns on md+) -->
-                <div class="md:col-span-3 flex justify-end pt-4">
+                <!-- Submit Button -->
+                <div class="sm:col-span-2 flex justify-end pt-4">
                     <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
+                        class="bg-blue-950 hover:bg-blue-800 text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
                     </button>
                 </div>
             </form>
-
         </div>
     </div>
-
 </div>
 
-<!-- Optional Fade Animation -->
+<!-- Animation -->
 <style>
-    [x-cloak] {
-        display: none;
-    }
-
-    .animate-fadeIn {
-        animation: fadeIn 0.3s ease-in-out;
-    }
-
+    [x-cloak] { display: none; }
+    .animate-fadeIn { animation: fadeIn 0.3s ease-in-out; }
     @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 </style>

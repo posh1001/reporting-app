@@ -1,4 +1,3 @@
-
 <!-- Alpine State Wrapper -->
 <div x-data="{ showModal: false }">
 
@@ -57,7 +56,8 @@
             </div>
 
             <!-- Form Body -->
-            <form action="/tv" method="POST" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <form action="/tv" method="POST" class="grid grid-cols-2 gap-6"
+                style="overflow: auto">
                 @csrf
 
                 <!-- Church -->
@@ -82,45 +82,47 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Total Slots Required</label>
                     <input type="number" name="total_slot_required" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number Yet To Confirm -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Total Podcast Required</label>
                     <input type="text" name="total_podcast_required" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Yet to be Invited -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Total Slots Done</label>
                     <input type="number" name="total_slots_done" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number coming with own cars -->
                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Total slot yet to be commissioned</label>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Total slot yet to be
+                        commissioned</label>
                     <input type="number" name="total_slots_yet_to_be_commissioned" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number coming with bus -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Resources Required</label>
                     <input type="number" name="resources_required" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contact that have come to church</label>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contact that have come to
+                        church</label>
                     <input type="number" name="number_of_contact_that_have_come_to_church" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
                 <!-- Submit Button (span all 3 columns on md+) -->
-                <div class="md:col-span-3 flex justify-end pt-4">
+                <div class="col-span-2 flex justify-end pt-4">
                     <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
+                        class="bg-blue-950  hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
                     </button>
                 </div>

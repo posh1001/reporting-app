@@ -1,4 +1,3 @@
-
 <!-- Alpine State Wrapper -->
 <div x-data="{ showModal: false }">
 
@@ -57,7 +56,8 @@
             </div>
 
             <!-- Form Body -->
-            <form action="/mass-media" method="POST" class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <form action="/church-registration-reports" method="POST" class="grid grid-cols-2 gap-6"
+                style="overflow: auto">
                 @csrf
 
                 <!-- Church -->
@@ -83,7 +83,7 @@
                         <option value="lamp_post">Lamp Posts</option>
                     </select>
                 </div>
-                  <div>
+                <div>
                     <label class="block text-sm text-gray-500 mb-1">Location</label>
                     <select name="location"
                         class="w-full bg-gray-900 text-white hover-white px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -116,14 +116,15 @@
                     <input type="number" name="total_number_commissioned_in_epe" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
-                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contect that have come to church</label>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Number of contect that have come to
+                        church</label>
                     <input type="number" name="number_of_contact_that_have_come_to_church" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
                 <!-- Submit Button (span all 3 columns on md+) -->
-                <div class="md:col-span-3 flex justify-end pt-4">
+                <div class="col-span-2 flex justify-end pt-4">
                     <button type="submit"
                         class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report

@@ -195,7 +195,9 @@
             </div>
 
             <!-- Form Body -->
-            <form action="/church-registration-reports" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form action="/church-registration-reports" method="POST" class="grid grid-cols-2 gap-6"
+                style="overflow: auto">
+
                 @csrf
 
                 <!-- Church -->
@@ -249,12 +251,13 @@
                 </div>
 
                 <!-- Submit Button -->
-                <div class="md:col-span-2 flex justify-end pt-4">
+                <div class="col-span-2 flex justify-end pt-4">
                     <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
+                        class="bg-blue-950 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
                     </button>
                 </div>
+
             </form>
 
         </div>

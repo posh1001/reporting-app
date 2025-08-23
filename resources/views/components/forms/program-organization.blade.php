@@ -21,7 +21,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-white">Church Summary <br>Attendance Report</h2>
+                    <h2 class="text-lg font-semibold text-white">Program Organization Report</h2>
                     <p class="text-sm text-gray-400">Click to open and submit your report</p>
                 </div>
             </div>
@@ -50,63 +50,77 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-white">Church Summary <br>Attendance Report</h2>
+                    <h2 class="text-xl font-semibold text-white">Program Organization Report</h2>
                     <p class="text-sm text-gray-400">Please complete the form below to submit your report.</p>
                 </div>
             </div>
 
             <!-- Form Body -->
-            <form action="/church-attendance-reports" method="POST" class="grid grid-cols-2 gap-6"
-                style="overflow: auto">
+            <form action="{{ route('program-organization.store') }}" method="POST"
+                class="grid grid-cols-4 gap-6">
                 @csrf
-
                 <!-- Church -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Church</label>
-                    <input type="text" name="church" placeholder="Enter your church"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+                    <label class="block text-sm font-medium text-gray-500 mb-1">SubCommittee</label>
+                    <input type="text" name="sub_committee" placeholder=""
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
                 <!-- Attendance Target -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Membership Strength</label>
-                    <input type="number" name="membership_strength" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Chairman</label>
+                    <input type="text" name="chairman" placeholder=""
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
                 <!-- Confirmed Via Link -->
                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Numbers Confirmed Via Link
-                        Link</label>
-                    <input type="number" name="confirmed_via_link" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Status Of Plan</label>
+                    <input type="text" name="status_plan" placeholder=""
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Yet to Confirm -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Number Yet To Confirm</label>
-                    <input type="number" name="yet_to_confirm" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Status Of Budget</label>
+                    <input type="text" name="status_budget" placeholder=""
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 
                 <!-- Confirmed Via Call Center -->
                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Number Coming with own cars</label>
-                    <input type="number" name="coming_with_own_cars" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Workforce Capacity</label>
+                    <input type="text" name="workforce_capacity" placeholder=""
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
-
-                <!-- Invitees -->
                 <div>
-                    <label class="block text-xs font-medium text-gray-500 mb-1">Number coming with bus</label>
-                    <input type="number" name="coming_with_bus" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Prayer Schedule</label>
+                    <input type="date" name="prayer_schedule" placeholder=""
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
-
-                <!-- Expected Attendance -->
                 <div>
-                    <label class="block text-sm font-medium text-gray-500 mb-1">Numbers expecting healing</label>
-                    <input type="number" name="expecting_healing" placeholder="0"
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Meeting Schedule</label>
+                    <input type="date" name="meeting_schedule" placeholder=""
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Meeting Participants</label>
+                    <input type="text" name="meeting_participants" placeholder=""
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Key decision / Action Points</label>
+                    <input type="text" name="key_decision_action_points" placeholder=""
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                 <div>
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Next action</label>
+                    <input type="text" name="next_action" placeholder=""
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                 <div>
+                    <label class="block text-sm font-medium text-gray-500 mb-1">Remarks</label>
+                    <input type="text" name="remarks" placeholder=""
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 </div>
 

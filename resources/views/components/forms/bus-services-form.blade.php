@@ -68,7 +68,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Church</label>
                     <input type="text" name="church" placeholder="Enter your church"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Cell Responsible -->
@@ -76,7 +76,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Cell Responsible</label>
                     <input type="text" name="cell_responsible" placeholder="Enter cell responsible"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Leader Responsible -->
@@ -84,7 +84,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Leader Responsible</label>
                     <input type="text" name="leader_responsible" placeholder="Enter leader responsible"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number To Deliver -->
@@ -92,7 +92,7 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number To Deliver To Venue</label>
                     <input type="number" name="number_to_deliver" placeholder="0"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Catchment Name -->
@@ -100,13 +100,13 @@
                     <label class="block text-sm font-medium text-gray-500 mb-1">Catchment Name</label>
                     <input type="text" name="catchment_name" placeholder="Enter catchment name"
                         class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white
-                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                               placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="md:col-span-2 flex justify-end pt-4">
                     <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700
+                        class="bg-blue-950 to-indigo-600 hover:from-blue-700 hover:to-indigo-700
                                text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
                     </button>

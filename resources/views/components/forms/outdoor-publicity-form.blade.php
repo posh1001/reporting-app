@@ -1,6 +1,3 @@
-
-
-
 <!-- Alpine State Wrapper -->
 <div x-data="{ showModal: false }">
 
@@ -24,7 +21,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-white">Outdoor Publicity Report <span class="text-sm font-sm text-gray-300">(Neighbourhood banners and A3 stickers)</h2>
+                    <h2 class="text-lg font-semibold text-white">Outdoor Publicity Report <span
+                            class="text-sm font-sm text-gray-300">(Neighbourhood banners and A3 stickers)</h2>
                     <p class="text-sm text-gray-400">Click to open and submit your report</p>
                 </div>
             </div>
@@ -53,13 +51,14 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-xl font-semibold text-white">Outdoor Publicity Report <br> <span class="text-sm">(Neighbourhood banners and A3 stickers)</span></h2>
-                    <p class="text-sm text-gray-400">Please complete the form below to submit your report.</p>
+                    <h2 class="text-xl font-semibold text-white">Outdoor Publicity Report <br> <span
+                            class="text-sm">(Neighbourhood banners and A3 stickers)</span></h2>
                 </div>
             </div>
 
             <!-- Form Body -->
-            <form action="/outdoor" method="POST" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <form action="/outdoor" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6"
+                style="overflow: auto">
                 @csrf
 
                 <!-- Church -->
@@ -71,7 +70,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Church</label>
                     <input type="text" name="church" placeholder="Enter you church"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <div>
@@ -91,40 +90,40 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number of ward</label>
                     <input type="number" name="number_of_ward" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number Yet To Confirm -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number of street</label>
                     <input type="number" name="number_of_street" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
-                   <div>
+                <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number of bus-stop placed</label>
                     <input type="number" name="number_of_busstop_placed" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Yet to be Invited -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number of Homes placed</label>
                     <input type="number" name="number_of_homes_placed" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Number coming with own cars -->
                 <div>
                     <label class="block text-sm font-medium text-gray-500 mb-1">Number Of Business Placed</label>
                     <input type="number" name="number_of_business_placed" placeholder="0"
-                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                        class="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-800 text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
                 </div>
 
                 <!-- Submit Button (span all 3 columns on md+) -->
-                <div class="md:col-span-3 flex justify-end pt-4">
+                <div class="col-span-2 flex justify-end pt-4">
                     <button type="submit"
-                        class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
+                        class="bg-blue-950 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 px-6 rounded-lg shadow-lg transition">
                         Submit Report
                     </button>
                 </div>
