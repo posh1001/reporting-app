@@ -57,7 +57,7 @@
 
             <!-- Form Body -->
             <form action="{{ route('program-organization.store') }}" method="POST"
-                class="grid grid-cols-4 gap-6">
+                class="grid grid-cols-3 gap-6">
                 @csrf
                 <!-- Church -->
                 <div>
